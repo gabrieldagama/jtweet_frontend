@@ -11,7 +11,10 @@ class CreateAccountForm extends Component {
   }
 
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.input.current.value);
+    alert('A name was submitted: ' + this.name.current.value);
+    alert('A name was submitted: ' + this.username.current.value);
+    alert('A name was submitted: ' + this.email.current.value);
+    alert('A name was submitted: ' + this.password.current.value);
     event.preventDefault();
   }
 
