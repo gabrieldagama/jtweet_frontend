@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Home from './Home'
-import CreateAnAccount from './CreateAnAccount'
-import { Switch, Route } from 'react-router-dom'
+import Home from './pages/Home';
+import CreateAnAccount from './pages/CreateAnAccount';
+import { Switch, Route } from 'react-router-dom';
 
 class Main extends Component {
   render() {
