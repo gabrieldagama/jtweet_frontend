@@ -9,11 +9,14 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom'
 import './index.css';
 import App from './components/App';
+import UserStore from './components/UserStore';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <BrowserRouter>
-        <App />
+        <UserStore>
+            <App />
+        </UserStore>
     </BrowserRouter>, 
     document.getElementById('root')
 );

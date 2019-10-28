@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { createCustomer } from '../../integration/CustomerIntegration';
+import { createUser } from '../../integration/UserIntegration';
 import NotificationBar from '../NotificationBar';
 
 class CreateAccountForm extends Component {
@@ -19,13 +19,13 @@ class CreateAccountForm extends Component {
   }
 
   handleSubmit(event) {
-    createCustomer({
+    createUser({
       'name': this.name.current.value,
       'username': this.username.current.value,
       'email': this.email.current.value,
       'password': this.password.current.value
     }).then(res => {
-      if (res.status == 201) {
+      if (res.status === 201) {
         this.setState(state => ({
           notification: {
             styleName: "alert-success",
