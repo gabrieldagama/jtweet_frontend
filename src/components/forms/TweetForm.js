@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { createUser } from '../../integration/UserIntegration';
 import NotificationBar from '../NotificationBar';
-import { Link } from 'react-router-dom'
 
-class CreateAccountForm extends Component {
+class TweetForm extends Component {
   constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -54,33 +53,16 @@ class CreateAccountForm extends Component {
 
   render() {
     return (
-      <div className="create-an-account-form">
+      <div className="tweet-form">
         <NotificationBar styleName={this.state.notification.styleName} msg={this.state.notification.msg} />
         <form onSubmit={this.handleSubmit}>
           <div className="form-group">
             <label>
-              Name:
-              <input className="form-control" type="text" ref={this.name} />
+              <textarea className="form-control" type="text" ref={this.name} />
             </label>
             <br></br>
-            <label>
-              Username:
-              <input className="form-control" type="text" ref={this.username} />
-            </label>
-            <br></br>
-            <label>
-              Email:
-              <input className="form-control" type="text" ref={this.email} />
-            </label>
-            <br></br>
-            <label>
-              Password:
-              <input className="form-control" type="password" ref={this.password} />
-            </label>
-            <br></br>
+            <input className="btn btn-primary" type="submit" value="Submit" />
           </div>
-          <input className="btn btn-primary" type="submit" value="Submit" />
-            <Link className="btn btn-secondary" id="back-btn" to="/">Back to Login</Link>
         </form>
       </div>
     );

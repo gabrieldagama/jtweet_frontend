@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Home from './pages/Home';
+import Index from './pages/Index';
 import CreateAnAccount from './pages/CreateAnAccount';
 import { Switch, Route } from 'react-router-dom';
-import Login from './pages/Login';
+import Home from './pages/Home';
 
 class Main extends Component {
   render() {
@@ -11,9 +11,9 @@ class Main extends Component {
         <div className="row">
             <div className="col-md-12">
             <Switch>
-              <Route exact path='/' component={Home}/>
+              <Route exact path='/' component={Index}/>
+              <Route exact path='/home' component={Home}/>
               <Route path='/create-an-account' component={CreateAnAccount}/>
-              <Route path='/login' component={Login}/>
             </Switch>
             </div>
           </div>

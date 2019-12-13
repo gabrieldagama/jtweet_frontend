@@ -13,3 +13,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body, .root {
+  background-color: #e5f3ff;
+}
+
+.login-box {
+  width: 300px;
+  margin: 80px auto;
+  background-color: white;
+  padding: 30px;
+}
+
+.create-an-account-box {
+  width: 400px;
+  margin: 80px auto;
+  background-color: white;
+  padding: 30px;
+}
+
+.create-an-account-box #back-btn {
+  margin-left:15px;
+}

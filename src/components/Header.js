@@ -27,9 +27,6 @@ class Header extends Component {
                           <li className="nav-item">
                             <a className="nav-link" href="/create-an-account">Create an Account</a>
                           </li>
-                          <li className="nav-item">
-                            <a className="nav-link" href="/login">Login</a>
-                          </li>
                         </ul>   
                       ) : (
                         <ul className="navbar-nav mr-auto">
